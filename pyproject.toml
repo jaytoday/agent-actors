@@ -2,7 +2,7 @@
 name = "agent-actors"
 version = "0.1.0"
 description = "a proof-of-concept inspired by BabyAGI, the Plan-Do-Check-Adjust (PDCA) cycle, and the actor model of concurrency"
-authors = ["Cyrus Nouroozi"]
+authors = ["Shaman AI <hello@shaman.ai>"]
 license = "BUSL-1.1"
 readme = "README.md"
 packages = [{ include = "agent_actors" }]
@@ -11,15 +11,15 @@ packages = [{ include = "agent_actors" }]
 line-length = -1
 
 [tool.poetry.dependencies]
-python = "^3.10.9"
+python = ">=3.10.9,<4.0"
 aiohttp = "^3.8.4"
 pydantic = "^1.10.7"
-langchain = { git = "https://github.com/hwchase17/langchain.git", rev = "master" }
+langchain = ">=0.0.218"
 wolframalpha = "^5.0.0"
 python-dotenv = "^1.0.0"
 openai = "^0.27.4"
 wikipedia = "^1.4.0"
-tiktoken = "^0.3.3"
+tiktoken = "^0.4.0"
 gptcache = "^0.1.17"
 termcolor = "^2.2.0"
 ray = { extras = ["default"], version = "^2.3.1" }
